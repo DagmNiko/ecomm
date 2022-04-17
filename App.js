@@ -9,17 +9,16 @@ import {
   Image,
   TouchableOpacity
 } from 'react-native';
-
+import {NavBtn} from './Components/index.jsx'
 
 export default function App() {
   const click = () => { < Text > clicked!</Text >
   }
   return ( < SafeAreaView style = {
     styles.container
-  } > < TouchableOpacity onPress = {
-    click
-  } > < Image source = {
-    require("./assets/favicon.png")}/ > < /TouchableOpacity > < /SafeAreaView >
+  } >
+    
+  < /SafeAreaView >
   );
 }
 
