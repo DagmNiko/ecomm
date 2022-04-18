@@ -12,13 +12,13 @@ import {
 import {NavBtn} from './Components/index.jsx'
 
 export default function App() {
-  const click = () => { < Text > clicked!</Text >
+  const click = () => { <Text> clicked!</Text>
   }
-  return ( < SafeAreaView style = {
-    styles.container
-  } >
+  return ( 
+  <SafeAreaView style = {styles.container}> 
+    <NavBtn />
+  </SafeAreaView>
     
-  < /SafeAreaView >
   );
 }
 
