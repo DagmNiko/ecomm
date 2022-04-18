@@ -11,7 +11,7 @@ import {
   Button
 } from 'react-native';
 
-class NavBtn() {
+function NavBtn(props) {
   state = {}
   return (
     <View>
