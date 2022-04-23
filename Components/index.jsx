@@ -21,11 +21,15 @@ function NavBtn(props) {
   )
 }
 const NearBy = () => {
-  <Button style={styles.nearby}>Near by</Button>
+  <TouchableOpacity>
+    <Button style={styles.nearby}>Near by</Button>
+  </TouchableOpacity>
 }
 
 const WorldWide = () => {
-  <Button style={styles.worldwide}>Near by</Button>
+  <TouchableOpacity>
+    <Button style={styles.worldwide}>Near by</Button>
+  </TouchableOpacity>
 }
 
 const styles = StyleSheet.create({
