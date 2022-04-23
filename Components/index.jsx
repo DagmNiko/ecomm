@@ -28,9 +28,12 @@ const NearBy = () => {
 
 const WorldWide = () => {
   <TouchableOpacity>
-    <Button style={styles.worldwide}>Near by</Button>
+    <Button style={styles.worldwide}>World Wide</Button>
   </TouchableOpacity>
 }
+
+
+
 
 const styles = StyleSheet.create({
   nearby: {
