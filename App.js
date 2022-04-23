@@ -9,11 +9,9 @@ import {
   Image,
   TouchableOpacity
 } from 'react-native';
-import {NavBtn} from './Components/index.jsx'
+import {NavBtn} from './Components/NavBtn.jsx'
 
 export default function App() {
-  const click = () => { <Text> clicked!</Text>
-  }
   return ( 
   <SafeAreaView style = {styles.container}> 
     <NavBtn />
