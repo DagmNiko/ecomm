@@ -14,7 +14,7 @@ import {
 function NavBtn(props) {
   state = {}
   return (
-    <View>
+    <View style={styles.view}>
       <NearBy />
       <WorldWide />
     </View>
@@ -22,13 +22,13 @@ function NavBtn(props) {
 }
 const NearBy = () => {
   <TouchableOpacity>
-    <Button style={styles.nearby}>Near by</Button>
+    <Button style={styles.nearby} onPress={nearby}>Near by</Button>
   </TouchableOpacity>
 }
 
 const WorldWide = () => {
   <TouchableOpacity>
-    <Button style={styles.worldwide}>World Wide</Button>
+    <Button style={styles.worldwide} onPress={worldwide}>World Wide</Button>
   </TouchableOpacity>
 }
 
@@ -36,18 +36,38 @@ const WorldWide = () => {
 
 
 const styles = StyleSheet.create({
+  view : {
+    display: 'flex',
+    justifyContent: 'center',
+    //margin-top: 1rem;
+  },
   nearby: {
-    border: '1px solid red',
-    width: '30rem',
-    borderRadius: 10
+    border: 'none',
+    width: '8rem',
+    borderRadius: 15,
+    height: '2rem',
+    color: 'white',
+    background: '#0ee100'
   },
   worldwide: {
-    border: '1px solid blue',
-    width: '30rem',
-    borderRadius: 10
+    width: '8rem',
+    borderRadius: 15,
+    height: '2rem'
+    border: 'none',
+    color: '#0ee100',
+    background: 'transparent'
+    
   },
 });
 
+const nearby = () => {
+  styles.nearby[borderBottom] = '1px solid #0ee100';
+}
+const worldwide = () => {
+  styles.worldwide[borderBottom] = '1px solid #0ee100';
+    
+  }
+}
 export default NavBtn;
 
 
