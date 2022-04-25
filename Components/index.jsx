@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
   worldwide: {
     width: '8rem',
     borderRadius: 15,
-    height: '2rem'
+    height: '2rem',
     border: 'none',
     color: '#0ee100',
     background: 'transparent'
@@ -67,7 +67,7 @@ const worldwide = () => {
   styles.worldwide[borderBottom] = '1px solid #0ee100';
     
   }
-}
+
 export default NavBtn;
 
 
