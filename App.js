@@ -9,11 +9,11 @@ import {
   Image,
   TouchableOpacity
 } from 'react-native';
-import {NavBtn} from './Components/NavBtn.jsx'
+import {NavBtn} from './Components/NavBtn.jsx';
 
 export default function App() {
   return ( 
-  <SafeAreaView style = {styles.container}> 
+  <SafeAreaView style={styles.container}> 
     <NavBtn />
   </SafeAreaView>
     
